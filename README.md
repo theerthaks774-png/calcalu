@@ -2,64 +2,118 @@
 
 
 
-# [Project Name] 🎯
+# calcula
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: No Idea
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Theertha K S - Adi Shankara Institute of Engineering and Technology
+- Member 2: Aleena N -  Adi Shankara Institute of Engineering and Technology
 
 ### Project Description
-[2-3 lines about what your project does]
-
+something useless
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+calculators are too useful
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
+Make one that isn't.
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+-HTML5
+- VS Code, Git/GitHub
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- None
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+No installation needed
 
 # Run
-[commands]
+ Just open the file
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="488" height="595" alt="image" src="https://github.com/user-attachments/assets/df59b88a-7d13-4fa5-b7e4-ed597b505c03" />
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="638" height="971" alt="image" src="https://github.com/user-attachments/assets/b0ccbca5-bbaa-4221-8c46-cad44f540cfd" />
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
+<img width="645" height="937" alt="image" src="https://github.com/user-attachments/assets/c8202804-1c64-4d12-9428-3f27e14ae916" />
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+┌─────────────────────────────────────────────────────────────────┐
+│                         USER INTERFACE                          │
+│  ┌──────────────┐  ┌─────────────────┐  ┌─────────────────┐     │
+│  │ Intro Screen │→ │ Sarcasm Panel   │→ │ Calculator Grid │     │
+│  │  (Welcome)   │  │  (Commentary)   │  │  (Buttons)      │     │
+│  └──────────────┘  └─────────────────┘  └─────────────────┘     │
+└────────────────────────────────┬────────────────────────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   USER INPUT HANDLER    │
+                    │  • Button clicks        │
+                    │  • Keyboard events      │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   EXPRESSION BUILDER    │
+                    │  Builds string like     │
+                    │  "123+456×2"            │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      TOKENIZER          │
+                    │  Regex-based split into │
+                    │  numbers + operators    │
+                    │  ["123","+","456","×","2"]│
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   OPERATOR DISPATCHER   │
+                    │  Left-to-right eval     │
+                    └──┬────┬────┬────┬───────┘
+                       │    │    │    │
+         ┌─────────────┘    │    │    └─────────────┐
+         ▼                  ▼    ▼                  ▼
+   ┌──────────┐      ┌──────────┐ ┌──────────┐ ┌──────────┐
+   │    +     │      │    −     │ │    ×     │ │    ÷     │
+   │ Concaten.│      │ Edge Dig.│ │ Split-Sub│ │ Split-Add│
+   └────┬─────┘      └────┬─────┘ └────┬─────┘ └────┬─────┘
+        │                 │            │            │
+        └─────────────────┴────────────┴────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │     RESULT DISPLAY      │
+                    │  • Flash animation      │
+                    │  • Particle burst       │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │     SARCASM ENGINE      │
+                    │  • Classify result      │
+                    │  • Pick random roast    │
+                    │  • Typewriter effect    │
+                    │  • Emoji reaction       │
+                    └─────────────────────────┘
+
 
 For Hardware:
 
